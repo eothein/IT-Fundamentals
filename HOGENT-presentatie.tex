@@ -22,8 +22,12 @@
 \usepackage{booktabs}          % Mooie tabellen
 \usepackage{multirow,multicol} % Tabelcellen samenvoegen
 \usepackage{eurosym}           % Euro symbool
+\usepackage{amssymb,latexsym,amsfonts,graphicx}
 
 %---------- Commando-definities -----------------------------------------------
+
+\newtheorem{definitie}{Definitie}[]
+\newtheorem{eigenschap}{Eigenschap}[]
 
 %---------- Info over de presentatie ------------------------------------------
 
@@ -42,7 +46,7 @@
 
 \frame{\maketitle}
 
-\begin{frame}
+\begin{frame}[allowframebreaks]
   \frametitle{Inhoud.}
 
   \tableofcontents
@@ -50,12 +54,12 @@
  
 %---------- Corpus ------------------------------------------------------------
 
-\section{Eerste deel.}
 
-\begin{frame}
-  \frametitle{Inleiding.}
-  
-  
-\end{frame}
+	\input{analyse-inleiding-pres}
+	\input{analyse-begrippen-pres}
+	\input{analyse-veeltermfuncties-pres}
+	\input{analyse-logEnExp-pres}
+	\input{analyse-discreteFuncties-pres}
+
 
 \end{document}
